@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  @apply font-body bg-offWhite box-border;
+}
+
+.px {
+  @apply px-[4.5%] 2xl:px-[7.5rem];
+}
+
+.sub-heading {
+  @apply font-bold text-secondary-60 text-3xl leading-normal text-center lg:text-start sm:text-[2.5rem] sm:leading-tight pb-8 lg:pb-4;
+}
+
+.text {
+  @apply font-normal text-base sm:text-lg sm:leading-[26px] text-secondary-50;
+}
+
+.btn {
+  @apply block text-center max-w-[200px] mx-auto sm:mx-0 py-[17px] px-[50px] font-bold text-offWhite text-lg leading-5 bg-primary-600 rounded-lg hover:bg-primary-800;
+}
+
+/* Header Section */
+
+.header {
+  @apply pb-5 bg-[#F6F9FF] sticky top-0 left-0 right-0 z-50 lg:flex lg:justify-between lg:items-center xl:gap-[11.25rem];
+}
+
+.header_navbar {
+  @apply bg-[#F6F9FF] pt-12 sm:pt-7 text-center lg:text-left lg:flex lg:justify-between lg:items-center shrink-0 lg:gap-12 xl:gap-32;
+}
+
+.header_primary_nav {
+  @apply lg:flex lg:justify-between lg:items-center lg:gap-4 xl:gap-[48px];
+}
+
+.header_nav_list {
+  @apply mb-4 sm:mb-6 lg:mb-0;
+}
+
+.header_nav_link {
+  @apply capitalize text-secondary-60 font-semibold text-base p-1 leading-[18px] border-b-2 border-[#F6F9FF] hover:border-b-primary-600;
+}
+
+.header_nav_link-active {
+  @apply text-primary-600 font-bold hover:border-b-0;
+}
+
+.header_secondary_nav {
+  @apply mt-10 sm:mt-12 lg:mt-0 flex flex-col gap-8 justify-between items-center lg:flex-row lg:gap-4;
+}
+
+.header_login {
+  @apply capitalize font-bold text-lg leading-[25px] bg-offWhite text-primary-600 border border-primary-600 rounded-lg py-2 px-4 sm:py-4 sm:px-6 hover:shadow-lg;
+}
+
+.header_btn, .hero_btn {
+  @apply w-[216px] mx-auto lg:mx-0 capitalize font-bold text-lg leading-[20px] text-offWhite bg-primary-600 rounded-lg py-4 sm:p-[1.125rem] hover:bg-primary-800;
+}
+
+/* Hero Section */
+.hero {
+  /* @apply pt-[8%] sm:pt-14 flex flex-col lg:flex-row gap-10 sm:gap-[52px] lg:gap-5 xl:gap-[52px] justify-between items-center; */
+  @apply pt-[8%] sm:pt-14 flex flex-col lg:flex-row gap-10 sm:gap-[52px] justify-between items-center;
+}
+
+.hero_text_content {
+  @apply w-full text-center lg:text-start mx-auto lg:mx-0;
+}
+
+.hero_title {
+  @apply font-bold text-[1.83rem] sm:text-[2.625rem] lg:text-[2rem] xl:text-[2.625rem] leading-relaxed sm:leading-[57px] text-secondary-60;
+}
+
+.hero_title_span {
+  @apply inline-block pl-[0.375rem] pr-[1px] bg-primary-600 text-offWhite clip-path-myPolygon;
+}
+
+.hero_text {
+  @apply font-normal text-base sm:text-lg lg:text-base lg:w-[500px] xl:w-full xl:text-lg leading-[26px] text-secondary-50 pt-4 pb-6;
+}
+
+.hero_get_app {
+  @apply mt-12 flex gap-4 flex-wrap justify-center items-center lg:justify-start;
+}
+
+.hero_btn_download {
+  @apply w-[200px] text-center py-4 bg-inherit border border-primary-600 flex gap-2 justify-center items-center rounded-lg font-bold text-primary-600 text-lg leading-[25px] cursor-pointer hover:shadow-lg;
+}
+
+.hero_illustration-700 {
+  @apply w-full h-[66.5%] sm:w-[90%] xl:w-[438px] mb-4 bg-primary-700 rounded-2xl absolute right-0 bottom-0 sm:mb-10 lg:mb-5 xl:mb-10 -z-20;
+}
+
+.hero_illustration-500 {
+  @apply w-[90%] h-[80%] xl:w-[478px] bg-primary-500 rounded-2xl absolute left-0 sm:ml-5 bottom-0 -z-10;
+}
+
+
+/* Steps Section */
+.steps {
+  @apply px mt-20 sm:mt-24 xl:mt-[7.5rem] flex flex-col lg:flex-row-reverse gap-16 xl:gap-[155px] justify-between items-center;
+}
+
+.steps_text {
+  @apply text pb-10 text-center lg:text-start;
+}
+
+.steps_guidelines {
+  @apply grid gap-8 lg:gap-7 max-w-[39.375rem] mx-auto lg:mx-0;
+}
+
+.steps_list {
+  @apply text flex justify-start items-center gap-7 sm:gap-10;
+}
+
+.steps_image {
+  @apply shrink-0 bg-[#DDE6FC] rounded p-2 align-middle;
+}
+
+
+/* What Can You Do Section */
+.transaction {
+  @apply mt-20 sm:mt-24 xl:mt-32 flex flex-col lg:flex-row gap-16 xl:gap-[156px] justify-between items-center;
+}
+
+
+/* What Else Can You Do Section  */
+.extras {
+  @apply mt-24 xl:mt-28 flex flex-col lg:flex-row-reverse gap-16 xl:gap-[153px] justify-between items-center;
+}
+
+.extras_illustration-800 {
+  @apply bg-primary-500 rounded-2xl w-full h-[84%] absolute left-0 bottom-0 -z-10;
+}
+
+
+/* Stay Focused Section */
+.stay_focused {
+  @apply mt-20 sm:mt-[7.5rem] flex flex-col lg:flex-row gap-12 xl:gap-[151px] justify-between items-center;
+}
+
+.stay_focused_text {
+  @apply text pb-14 md:pb-10 max-w-lg mx-auto text-center lg:mx-0 lg:text-start;
+}
+
+.stay_focused_testimonial {
+  @apply max-w-[525px] mx-auto flex gap-4 flex-col justify-between items-center md:flex-row md:gap-8 lg:mx-0;
+}
+
+.stay_focused_image {
+  @apply w-[100px] h-[100px] rounded-full object-cover mx-auto sm:mx-0;
+}
+
+.stay_focused_blockquote {
+  @apply text-secondary-50 text-base leading-[26px] font-medium;
+}
+
+.stay_focused_quotes {
+  @apply text-[1.375rem] text-secondary-60 font-semibold leading-[26px];
+}
+
+.stay_focused_preview {
+  @apply shrink-0 bg-[#EFF3FF] p-6 md:pt-8 md:px-[30px] md:pb-[31px] rounded-[14px];
+}
+
+
+/* footer */
+.footer {
+  @apply text-offWhite w-full bg-primary-800 px mt-20 sm:mt-[7.5rem];
+}
+
+.social-icon {
+  @apply w-10 h-10 border border-offWhite rounded-full flex justify-center items-center;
+}
+
+.footer_menu_heading {
+  @apply mb-4 font-bold text-2xl leading-normal;
+}
+
+.footer_menu_item {
+  @apply font-medium text-base sm:text-xl sm:leading-normal pb-[2px] border-b-2 border-primary-800 hover:border-b-offWhite;
+}
+
+.copyright {
+  @apply text-lg leading-normal font-normal text-center pt-[51px] pb-6;
+}

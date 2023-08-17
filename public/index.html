@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/src/favicon.svg" type="image/x-icon">
+  <title>SaveSpace | Landing page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+  <div class="container mx-auto relative">
+    <header class="header px">
+      <div class="flex items-center justify-between">
+        <div class="header_logo shrink-0">
+          <img class="object-cover" src="/src/images/savespace-logo.svg" alt="">
+        </div>
+        <div class="header_menuBar lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer" id="menuOpen">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 hidden" id="menuClose">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+      </div>
+      
+      <nav class="header_navbar hidden shrink-0" id="navBar">
+        <ul class="header_primary_nav">
+          <li class="header_nav_list"><a href="#" class="header_nav_link header_nav_link-active">home</a></li>
+          <li class="header_nav_list"><a href="#" class="header_nav_link">save</a></li>
+          <li class="header_nav_list"><a href="#" class="header_nav_link">business</a></li>
+          <li class="header_nav_list"><a href="#" class="header_nav_link">blog</a></li>
+          <li class="header_nav_list"><a href="#" class="header_nav_link">contact us</a></li>
+        </ul>
+
+        <div class="header_secondary_nav">
+          <a class="header_login" href="#">log in</a>
+          <button class="header_btn shrink-0">create free account</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero px">
+        <div class="hero_text max-w-[561px]">
+          <div class="hero_text_content">
+            <h1 class="hero_title">
+              You Don’t Save, <span class="hero_title_span">We Save!</span> <br>
+              Your Money, Your Terms.
+            </h1>
+            <p class="hero_text">Disrupting the traditional financial sector by offering better financial solutions, while staying true to the human values of trust, honesty, and fairness. Secure your future with our secure investments.</p>
+            <button class="hero_btn">create free account</button>
+
+            <div class="hero_get_app">
+              <button class="hero_btn_download">
+                <div class="hero_apple_logo">
+                  <img src="/src/images/apple.svg" alt="Apple logo">
+                </div>
+                Get On Apple
+              </button>
+              <button class="hero_btn_download">
+                <div class="hero_playstore_logo">
+                  <img src="/src/images/playstore.svg" alt="Google playstore logo">
+                </div>
+                Get On Android
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero_image_content">
+          <div class="relative max-w-[587px] max-h-[657px]">
+            <div class="w-full h-full">
+              <div class="hero_illustration-700"></div>
+              <div class="hero_illustration-500"></div>
+            </div>
+            <div class="hero_image">
+              <img class="object-cover" src="/src/images/hero-image.svg" alt="Picture of an happy client">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rewarding Every Step Section -->
+      <section class="steps">
+        <div class="max-w-[45.75rem] pt-4 pb-3">
+          <div class="w-full">
+            <h2 class="sub-heading">Rewarding Your Every Step Of Financial journey</h2>
+            <p class="steps_text">We have your back! You can count on us too. We want to give you the freedom of opening a save and secure savings and investment account with  ₦0.</p>
+            <ul class="steps_guidelines">
+              <li class="steps_list">
+                <span class="steps_image">
+                  <img src="/src/images/user-add.svg" alt="">
+                </span> 
+                Create a SaveSpace account to get started. It’s free!!! 
+              </li>
+              <li class="steps_list">
+                <span class="steps_image">
+                  <img src="/src/images/card-add.svg" alt="">
+                </span> 
+                Link your bank account to your SaveSpace account. Don’t worry your details are safe with us. 
+              </li>
+              <li class="steps_list">
+                <span class="steps_image">
+                  <img src="/src/images/wallet-add.svg" alt="">
+                </span> 
+                Start saving!!! You don’t have to worry about late payments, you can tell us to automatically save for you. 
+              </li>
+              <li class="steps_list">
+                <span class="steps_image">
+                  <img src="/src/images/people.svg" alt="">
+                </span> 
+                Participate in thrifts (ajo, esusu and adashe) with your family and friends. Create a thrift plan and invite your friends to join you. 
+              </li>
+
+              <button class="btn">Try For Free</button>
+            </ul>
+          </div>
+        </div>
+        <div class="pb-2 shrink-0">
+          <img class="transform hover:translate-x-2 transition-transform" src="/src/images/app-preview.png" alt="">
+        </div>
+      </section>
+
+      <!-- What Can You Do Section -->
+      <section class="transaction px">
+        <div class="max-w-[37.5rem]">
+          <div class="w-full">
+            <h2 class="sub-heading">SaveSpace, Your all in one savings application.</h2>
+            <div class="ml-6 mb-8">
+              <ul class="list-disc px-1 grid gap-4 lg:gap-6">
+                <li class="text">
+                  SaveSpace allows you to track your transactions quick and easily. 
+                </li>
+                <li class="text">
+                  SaveSpace products and services are complete and varies in all segments according to users needs.
+                </li>
+                <li class="text pr-4">
+                  User friendly and easy navigation savings and investment mobile app.
+                </li>
+              </ul>
+            </div>
+            <button class="btn">Try For Free</button>
+          </div>
+        </div>
+
+        <div class="shrink-0 relative">
+          <div class="ml-6 mb-6 bg-white rounded-lg overflow-hidden drop-shadow-3xl">
+            <img src="/src/images/recent-transactions.png" alt="">
+          </div>
+          <img class="absolute bottom-0 left-0" src="/src/images/ribbon.svg" alt="">
+        </div>
+      </section> 
+      
+      <!-- What Else Can You Do Section -->
+      <section class="extras px">
+        <div class="max-w-[35.4375rem]">
+          <div class="w-full">
+            <h2 class="sub-heading">What else can you do with SaveSpace?</h2>
+            <div class="ml-6 mb-8">
+              <ul class="list-disc px-1 grid gap-4 lg:gap-6">
+                <li class="text">
+                  Are you scared of participating in ajo, esusu or adashe? SaveSpace allows you participate in thrift worry free. 
+                </li>
+                <li class="text">
+                  Accept payments from all banks. Several features on the app ensure maximum guarantee and transparency.
+                </li>
+                <li class="text">
+                  SaveSpace allows you to invest your money in different industries, with mouth watering ROI.
+                </li>
+              </ul>
+            </div>
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+
+        <div class="shrink-0 ">
+          <div class="relative max-w-[478px] max-h-[625px]">
+            <div class="w-full h-full">
+              <div class="extras_illustration-800"></div>
+            </div>
+            <div class="extras_image">
+              <img class="object-cover" src="/src/images/lady-thinking.png" alt="contemplative dreamy woman looks, with thoughtful expression">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stay Focused Section -->
+      <section class="stay_focused px">
+        <div class="max-w-[45.75rem] pt-4 pb-3">
+          <div class="w-full">
+            <h2 class="sub-heading">Stay Focused on Your Financial Goals</h2>
+            <p class="stay_focused_text">Improve your financial goals with custom goals that keep you going. Save for a home, gadgets, car, education, conquer debt and be on your way to financial independence.</p>
+            <div class="stay_focused_testimonial">
+              <div class="shrink-0">
+                <img class="stay_focused_image" src="/src/images/user.png" alt="">
+              </div>
+              <div class="grid gap-2 text-center md:text-left">
+                <blockquote class="stay_focused_blockquote">
+                  <span class="stay_focused_quotes">“</span>
+                    <span class="font-semibold">SaveSpace</span> helped me reduce my spending habit. I needed money for my house rent so I started saving with SaveSpace, I was able to save with discipline.
+                  <span class="stay_focused_quotes">”</span>
+                </blockquote>
+                <p class="text-secondary-60">
+                  <span class="font-semibold text-xl leading-[26px]">Ade Lola</span>
+                  <span class="font-semibold text-2xl leading-[26px]">-</span>
+                  <span class="font-medium text-[1.125rem] leading-[26px]">Student</span>
+                </p>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="stay_focused_preview">
+          <div class="max-w-[464px] grid gap-6">
+            <img src="/src/images/Frame-1.png" alt="">
+            <img src="/src/images/Frame-2.png" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="flex justify-between flex-wrap gap-16 pt-10">
+        <div class="w-full 2xl:w-[265px] mr-7 shrink-0">
+          <div class="footer_logo pb-4">
+            <img class="object-cover" src="/src/images/footer-logo.png" alt="">
+          </div>
+          <p class="text-base leading-[26px] font-normal pb-6">SaveSpace is the world largest and most secure digital savings service.</p>
+          <ul class="flex gap-4 items-center">
+            <a href="#" class="social-icon">
+              <img src="/src/images/facebook.svg" alt="">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="/src/images/twitter.svg" alt="">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="/src/images/instagram.svg" alt="">
+            </a>
+          </ul>
+        </div>
+        <div class="max-w-[149px] shrink-0">
+          <h3 class="footer_menu_heading">Company</h3>
+          <ul class="grid gap-4">
+            <li><a class="footer_menu_item" href="#">Career</a></li>
+            <li><a class="footer_menu_item" href="#">SaveSpace blog</a></li>
+            <li><a class="footer_menu_item" href="#">Press</a></li>
+            <li><a class="footer_menu_item" href="#">Our story</a></li>
+            <li><a class="footer_menu_item" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="max-w-[161px] shrink-0">
+          <h3 class="footer_menu_heading">Product</h3>
+          <ul class="grid gap-4">
+            <li><a class="footer_menu_item" href="#">Features</a></li>
+            <li><a class="footer_menu_item" href="#">What’s new?</a></li>
+            <li><a class="footer_menu_item" href="#">Coming soon</a></li>
+            <li><a class="footer_menu_item" href="#">SaveSpace guide</a></li>
+          </ul>
+        </div>
+
+        <div class="max-w-[214px] shrink-0">
+          <h3 class="footer_menu_heading">Resources</h3>
+          <ul class="grid gap-4">
+            <li><a class="footer_menu_item" href="#">Forum</a></li>
+            <li><a class="footer_menu_item" href="#">SaveSpace community</a></li>
+            <li><a class="footer_menu_item" href="#">Events</a></li>
+            <li><a class="footer_menu_item" href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <div class="max-w-32 shrink-0">
+          <h3 class="footer_menu_heading">About</h3>
+          <ul class="grid gap-4">
+            <li><a class="footer_menu_item" href="#">Support</a></li>
+            <li><a class="footer_menu_item" href="#">Terms of use</a></li>
+            <li><a class="footer_menu_item" href="#">Privacy Policy</a></li>
+            <li><a class="footer_menu_item" href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2022 SaveSpace - Built with &nbsp;<span class="text-[#FF473E] text-xl leading-normal">❤️</span></p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
